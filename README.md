@@ -1,37 +1,80 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-You can use the [editor on GitHub](https://github.com/guidoarkesteijn/portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+        <title>Guido Arkesteijn - Portfolio</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-### Markdown
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            .full-height {
+                height: 100vh;
+            }
 
-```markdown
-Syntax highlighted code block
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
 
-# Header 1
-## Header 2
-### Header 3
+            .position-ref {
+                position: relative;
+            }
 
-- Bulleted
-- List
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
 
-1. Numbered
-2. List
+            .content {
+                text-align: center;
+            }
 
-**Bold** and _Italic_ and `Code` text
+            .title {
+                font-size: 84px;
+            }
 
-[Link](url) and ![Image](src)
-```
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/guidoarkesteijn/portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            
+            <div class="content">
+                <div class="title m-b-md">
+                    Guido Arkesteijn
+                </div>
+                <div class="">
+                    W.I.P.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
