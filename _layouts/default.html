@@ -8,9 +8,22 @@
 
     <!-- Styles -->
     <style>
+        /* Light mode */
+        :root {
+            --body-bg: #FFFFFF;
+            --body-color: #636b6f;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+        :root {
+                --body-bg: #636b6f;
+                --body-color: #FFFFFF;
+            }
+        }
         html, body {
-            background-color: #636b6f;
-            color: #ffffff;
+            background-color: var(--body-bg);
+            color: var(--body-color);
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             height: 100vh;
