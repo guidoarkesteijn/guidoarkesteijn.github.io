@@ -12,6 +12,8 @@
         :root {
             --body-bg: #c9d1d9;
             --body-color: #0d1117;
+            --box-shadow: #0d1117;
+            --primary: #FFC300;
         }
 
         /* Dark mode */
@@ -19,6 +21,7 @@
         :root {
                 --body-bg: #0d1117;
                 --body-color: #c9d1d9;
+                --box-shadow: #c9d1d9;
             }
         }
         html, body {
@@ -58,6 +61,10 @@
             font-size: 84px;
         }
 
+        .subtitle {
+            font-size: 48px
+        }
+
         .links > a {
             color: #636b6f;
             padding: 0 25px;
@@ -71,23 +78,95 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        .grid {
+            display: grid; 
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+            justify-items: center;
+        }
+
+        a {
+            color: var(--body-color);
+            
+        }
+        a:hover {
+            color: var(--primary);
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 200;
+        }
+
+        .card {
+            border: 1px solid var(--body-color);
+            border-radius: 5px;
+            padding:2em;
+        }
+
+        .link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 1em;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bottom {
+            font-size:2em;
+        }
+
+        .offset {
+            margin-right: 0.1em;
+        }
     </style>
     <script>
-        var loc = window.location.href+'';
-        if (loc.indexOf('http://')==0){
-            window.location.href = loc.replace('http://','https://');
-        }
+        // var loc = window.location.href+'';
+        // if (loc.indexOf('http://')==0){
+        //     window.location.href = loc.replace('http://','https://');
+        // }
     </script>
 </head>
 <body>
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Guido Arkesteijn
+                <strong>G</strong>uido <strong>A</Strong>rkesteijn
             </div>
-            <div class="">
-                W.I.P.
+            <div class="grid">
+                <div class="card">
+                    <i data-lucide="align-justify"></i>
+                    <h2>Gordle</h2>
+                    <p>Wordle Clone created with React.</p>
+                    <div class="row">
+                        <a class="link" title="Website" href="https://gordle.guidoarkesteijn.com" target="_blank">
+                            <i class="offset" data-lucide="globe"></i>
+                                Website
+                        </a>
+                        <a class="link" title="Repository" href="https://github.com/guidoarkesteijn/react-wordle" target="_blank">
+                            <i data-lucide="github"></i>
+                                    Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a title="GitHub" class="link bottom" href="https://github.com/guidoarkesteijn" target="_blank">
+                    <i data-lucide="github"></i>
+                    GitHub
+                </a>
             </div>
         </div>
+        
     </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
