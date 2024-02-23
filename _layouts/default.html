@@ -4,14 +4,14 @@
     <link rel="icon" type="image/png" href="/docs/assets/images/favicon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <style>
         /* Light mode */
         :root {
             --body-bg: #c9d1d9;
-            --body-color: #0d1117;
+            --body-color: #000000;
             --box-shadow: #0d1117;
             --primary: #FFC300;
         }
@@ -28,7 +28,7 @@
             background-color: var(--body-bg);
             color: var(--body-color);
             font-family: 'Raleway', sans-serif;
-            font-weight: 100;
+            font-weight: 300;
             height: 100vh;
             margin: 0;
         }
@@ -58,6 +58,7 @@
         }
 
         .title {
+            font-weight: 100;
             font-size: 84px;
         }
 
@@ -86,14 +87,6 @@
             justify-items: center;
         }
 
-        a {
-            color: var(--body-color);
-            
-        }
-        a:hover {
-            color: var(--primary);
-        }
-
         strong {
             color: var(--primary);
             font-weight: 200;
@@ -105,12 +98,28 @@
             padding:2em;
         }
 
-        .link {
+        a.button {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             margin: 1em;
+            padding: 6px;
+            border: 1px solid var(--body-color);
+            border-radius: 7px;
+            text-decoration: none;
+            transform: scale(1);
+            color: var(--body-color);
+            transition: all .1s ease-in-out;
+        }
+
+        a.button:hover {
+            transform: scale(1.1);
+        }
+
+        a.button:active {
+            color: var(--primary);
+            border-color: var(--primary);
         }
 
         .row {
@@ -145,19 +154,19 @@
                     <h2>Gordle</h2>
                     <p>Wordle Clone created with React.</p>
                     <div class="row">
-                        <a class="link" title="Website" href="https://gordle.guidoarkesteijn.com" target="_blank">
+                        <a class="button" title="Website" href="https://gordle.guidoarkesteijn.com" target="_blank">
                             <i class="offset" data-lucide="globe"></i>
                                 Website
                         </a>
-                        <a class="link" title="Repository" href="https://github.com/guidoarkesteijn/react-wordle" target="_blank">
+                        <a class="button" title="Repository" href="https://github.com/guidoarkesteijn/react-wordle" target="_blank">
                             <i data-lucide="github"></i>
-                                    Repository
+                                Source
                         </a>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <a title="GitHub" class="link bottom" href="https://github.com/guidoarkesteijn" target="_blank">
+                <a title="GitHub" class="button bottom" href="https://github.com/guidoarkesteijn" target="_blank">
                     <i data-lucide="github"></i>
                     GitHub
                 </a>
