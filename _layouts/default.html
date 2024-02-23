@@ -81,9 +81,15 @@
 
         .grid {
             display: grid; 
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: 1em;
             justify-items: center;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         strong {
