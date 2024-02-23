@@ -1,4 +1,9 @@
-<title>Guido Arkesteijn - Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guido Arkesteijn - Portfolio</title>
     <!-- Meta -->
     <link rel="icon" type="image/svg+xml" href="/docs/assets/images/favicon.svg">
     <link rel="icon" type="image/png" href="/docs/assets/images/favicon.png">
@@ -46,6 +51,12 @@
             text-align: center;
         }
 
+        @media only screen and (max-width: 750px) {
+            .flex-center {
+                justify-content: flex-start;
+            }
+        }
+
         .position-ref {
             position: relative;
         }
@@ -58,7 +69,7 @@
 
         .title {
             font-weight: 100;
-            font-size: 84px;
+            font-size: 75px;
         }
 
         .subtitle {
@@ -144,12 +155,6 @@
             font-size:1.5em;
         }
     </style>
-    <script>
-        // var loc = window.location.href+'';
-        // if (loc.indexOf('http://')==0){
-        //     window.location.href = loc.replace('http://','https://');
-        // }
-    </script>
 </head>
 <body>
     <div class="flex-center position-ref full-height">
@@ -192,3 +197,4 @@
         </div>
     </div>
 </body>
+</html>
