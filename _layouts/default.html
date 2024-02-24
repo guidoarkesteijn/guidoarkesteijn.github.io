@@ -30,6 +30,7 @@
                 -primary: #00DCDC;
             }
         }
+
         html, body {
             background-color: var(--body-bg);
             color: var(--body-color);
@@ -108,13 +109,20 @@
             font-weight: 200;
         }
 
-        h1::first-letter {
-            color: var(--primary);
+        h1 {
             font-weight: 300;
         }
+
+        h1::first-letter {
+            color: var(--primary);
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
         h2::first-letter {
             color: var(--primary);
-            font-weight: bold;
         }
 
         .card {
